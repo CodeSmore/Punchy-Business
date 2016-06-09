@@ -11,11 +11,13 @@ public class EnemyHealthBar : MonoBehaviour {
 
 	private Image healthBarImage;
 	private Text healthBarText;
+	private Animator enemyAnimator;
 
 	// Use this for initialization
 	void Start () {
 		healthBarImage = GetComponent<Image>();
 		healthBarText = GetComponentInChildren<Text>();
+		enemyAnimator = GameObject.Find("Enemy").GetComponent<Animator>();
 
 		currentHealth = maxHealth;
 	}
@@ -48,7 +50,7 @@ public class EnemyHealthBar : MonoBehaviour {
 
 	void HandleDeath () {
 		if (currentHealth <= 0) {
-			LevelManager.LoadScene("Win Scene");
+			enemyAnimator.SetTrigger("Enemy Fall Trigger");
 		}
 	}
 

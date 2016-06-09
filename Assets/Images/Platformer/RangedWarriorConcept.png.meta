@@ -1,0 +1,89 @@
+fileFormatVersion: 2
+guid: b16a0af0377489e41a346361eab17040
+timeCreated: 1464965435
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: RangedWarriorConcept_0
+    21300002: RangedWarriorConcept_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 700
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: RangedWarriorConcept_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 856
+        width: 235
+        height: 1205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100.18, y: 514.95337}
+        - {x: -100.18, y: -514.04663}
+        - {x: 100.82, y: -514.04663}
+        - {x: 100.82, y: 514.95337}
+    - name: RangedWarriorConcept_1
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 653
+        width: 624
+        height: 1462
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -266.05334, y: 624.2267}
+        - {x: -266.05334, y: -623.7733}
+        - {x: 267.94666, y: -623.7733}
+        - {x: 267.94666, y: 624.2267}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
