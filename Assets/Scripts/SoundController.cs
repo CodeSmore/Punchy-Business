@@ -6,7 +6,7 @@ public class SoundController : MonoBehaviour {
 	[SerializeField]
 	private AudioClip playerBlockedPunch = null, playerHitByJab = null, playerHitByHook = null, playerHitByUppercut = null, knockOutSound = null;
 	[SerializeField]
-	private AudioClip tigerHitByJab = null, tigerHitByHook = null, tigerHitByUppercut;
+	private AudioClip tigerHitByJab = null, tigerHitByHook = null, tigerHitByUppercut = null;
 
 	private AudioSource audioSource = null;
 

@@ -11,10 +11,12 @@ public class HealthCircle : MonoBehaviour {
 
 	private Image fillerColor;
 	private LevelManager levelManager;
+	private PlatformerSoundController soundController;
 
 	// Use this for initialization
 	void Start () {
 		fillerColor = GetComponent<Image>();
+		soundController = GameObject.FindObjectOfType<PlatformerSoundController>();
 
 		currentHealth = maxHealth / 2;
 
@@ -37,6 +39,8 @@ public class HealthCircle : MonoBehaviour {
 	}
 
 	public void LoseHealth (int losses) {
+		soundController.PlayOthelloTakesDamage();
+
 		currentHealth -= losses;
 		UpdateHealthCircle();
 	}

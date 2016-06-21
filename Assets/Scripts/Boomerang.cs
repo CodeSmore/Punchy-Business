@@ -80,6 +80,8 @@ public class Boomerang : MonoBehaviour {
 		} else if (collider.tag == "Item") {
 			collider.transform.parent = transform;
 			collider.transform.localPosition = Vector3.zero;
+		} else if (collider.tag == "Enemy") {
+			Destroy (gameObject);
 		}
 	}
 }

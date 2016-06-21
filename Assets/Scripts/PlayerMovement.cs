@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	private Rigidbody2D playerRigidbody;
 	private Animator playerAnimator;
+	private PlatformerSoundController soundController;
 
 	private bool facingRight;
 
@@ -45,6 +46,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Start () {
 		playerRigidbody = GetComponent<Rigidbody2D>();
 		playerAnimator = GetComponent<Animator>();
+		soundController = GameObject.FindObjectOfType<PlatformerSoundController>();
 
 		startPosition = transform.position;
 		startJumpYPos = transform.position.y;
@@ -103,10 +105,17 @@ public class PlayerMovement : MonoBehaviour {
 
 			foreach (Collider2D collider in colliders) {
 				if (collider.gameObject != gameObject) {
+					if (isGrounded == false) {
+						// play land sound
+						soundController.PlayOthelloLand();
+					}
+
 					return true;
 				}
 			}
 		}
+
+
 
 		return false;
 	}
@@ -144,6 +153,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void Jump () {
 		if (CheckIsGrounded()) {
+			soundController.PlayOthelloJump();
+
 			playerRigidbody.AddForce(new Vector2(0f, jumpForce));
 		}
 	}

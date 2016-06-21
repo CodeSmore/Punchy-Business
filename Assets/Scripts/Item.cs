@@ -18,10 +18,12 @@ public class Item : MonoBehaviour {
 
 	private HealthCircle healthCircle;
 	private Launcher playerLauncher;
+	private PlatformerSoundController soundController;
 
 	void Start () {
 		healthCircle = GameObject.FindObjectOfType<HealthCircle>();
 		playerLauncher = GameObject.FindObjectOfType<Launcher>();
+		soundController = GameObject.FindObjectOfType<PlatformerSoundController>();
 	}
 
 	void Update () {
@@ -33,7 +35,6 @@ public class Item : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D (Collider2D collider) {
-		Debug.Log("Hitting something");
 		if (collider.tag == "Player") {
 			// blah blah blah
 			CollectItem();
@@ -45,12 +46,15 @@ public class Item : MonoBehaviour {
 	void CollectItem () {
 		if (itemType == ItemType.cherry) {
 			healthCircle.GainHealth(1);
+			soundController.PlayCherryCollectedOneShot();
 		} else if (itemType == ItemType.boomerang) {
 			// set player to have boomerang, enable button
 			playerLauncher.UnlockBoomerang();
+			soundController.PlayBoomerangCollectedOneShot();
 		} else if (itemType == ItemType.bell) {
 			// update UI
 			bellPlaceholder.SetCollected();
+			soundController.PlayBellCollectedOneShot();
 		}
 	}
 }

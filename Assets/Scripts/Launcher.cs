@@ -12,12 +12,15 @@ public class Launcher : MonoBehaviour {
 	[SerializeField]
 	private bool isBoomerangInFlight = false;
 
+	[SerializeField]
 	private bool isUnlocked = false;
 
 	// Use this for initialization
 	void Start () {
 		// disable button
-		boomerangButton.interactable = false;
+		if (!isUnlocked) {
+			boomerangButton.interactable = false;
+		}
 	}
 	
 	public void UnlockBoomerang () {
@@ -31,10 +34,12 @@ public class Launcher : MonoBehaviour {
 			Instantiate(boomerangPrefab, transform.position, Quaternion.identity);
 
 			isBoomerangInFlight = true;
+			boomerangButton.interactable = false;
 		}
 	}
 
 	public void ResetBoomerang () {
 		isBoomerangInFlight = false;
+		boomerangButton.interactable = true;
 	}
 }

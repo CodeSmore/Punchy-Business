@@ -12,18 +12,27 @@ public class RangedEnemyController : MonoBehaviour {
 	private float fireRate = 0;
 	private float throwTimer = 0;
 
-	// Use this for initialization
+	private PlatformerEnemyController enemy;
+	private PlatformerSoundController soundController;
+
+
 	void Start () {
-	
+		enemy = GetComponent<PlatformerEnemyController>();	
+		soundController = GameObject.FindObjectOfType<PlatformerSoundController>();
+
+		// ensures projectile is thrown up activation
+		throwTimer = fireRate;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		throwTimer += Time.deltaTime;
+		if (enemy.GetIsActive()) {
+			throwTimer += Time.deltaTime;
 
-		if (throwTimer >= fireRate) {
-			throwTimer = 0;
-			Fire();
+			if (throwTimer >= fireRate) {
+				throwTimer = 0;
+				Fire();
+			}
 		}
 	}
 
@@ -31,5 +40,6 @@ public class RangedEnemyController : MonoBehaviour {
 		GameObject newProjectile = Instantiate(projectile, projectileLaunchPoint.position, projectile.transform.rotation) as GameObject;
 
 		newProjectile.GetComponent<EnemyProjectile>().SetDirection(Mathf.Clamp((int)-transform.localScale.x, -1, 1));
+		soundController.PlaySpearThrow();
 	}
 }

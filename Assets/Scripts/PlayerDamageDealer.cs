@@ -15,14 +15,12 @@ public class PlayerDamageDealer : MonoBehaviour {
 	private EnemyController enemyController;
 	private EnemyHealthBar enemyHealthBar;
 	private Animator enemyAnimator;
-	private PlayerController punchController;
 	private SoundController soundController;
 
 	// Use this for initialization
 	void Start () {
 		enemyController = GameObject.FindObjectOfType<EnemyController>();
 		enemyHealthBar = GameObject.FindObjectOfType<EnemyHealthBar>();
-		punchController = GameObject.FindObjectOfType<PlayerController>();
 		enemyAnimator = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Animator>();
 		soundController = GameObject.FindObjectOfType<SoundController>();
 	}

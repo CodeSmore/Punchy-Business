@@ -10,8 +10,6 @@ public class Shredder : MonoBehaviour {
 	}
 
 	void OnTriggerExit2D (Collider2D collider) {
-		Debug.Log("exit");
-
 		if (collider.tag == "Player") {
 			levelManager.ResetLevel();
 		} else {
