@@ -16,7 +16,6 @@ public class MeleeWeaponController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		fist.SetActive(false);
-		Debug.Log(fist.activeSelf);
 
 		playerAnimator = GetComponentInParent<Animator>();
 		soundController = GameObject.FindObjectOfType<PlatformerSoundController>();

@@ -5,7 +5,7 @@ using System.Collections;
 public class PlayerDamageDealer : MonoBehaviour {
 
 	[SerializeField]
-	int jabDamage = 0, hookDamage = 0, uppercutDamage = 0;
+	int jabDamage = 0, hookDamage = 0, uppercutDamage = 0, superPunchDamage = 0;
 
 	[SerializeField]
 	private GameObject damageText = null;
@@ -16,6 +16,7 @@ public class PlayerDamageDealer : MonoBehaviour {
 	private EnemyHealthBar enemyHealthBar;
 	private Animator enemyAnimator;
 	private SoundController soundController;
+	private MomentumController momentumController;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +24,7 @@ public class PlayerDamageDealer : MonoBehaviour {
 		enemyHealthBar = GameObject.FindObjectOfType<EnemyHealthBar>();
 		enemyAnimator = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Animator>();
 		soundController = GameObject.FindObjectOfType<SoundController>();
+		momentumController = GameObject.FindObjectOfType<MomentumController>();
 	}
 
 	public void ExecuteJabDamage () {
@@ -30,6 +32,8 @@ public class PlayerDamageDealer : MonoBehaviour {
 
 		if (enemyController.GetEnemyState() == EnemyState.Vulnerable) {
 			soundController.PlayTigerHitByJabOneShot();
+
+			momentumController.IncrementMomentumProgress();
 		}
 	}
 
@@ -38,11 +42,23 @@ public class PlayerDamageDealer : MonoBehaviour {
 
 		if (enemyController.GetEnemyState() == EnemyState.Vulnerable) {
 			soundController.PlayTigerHitByHookOneShot();
+
+			momentumController.IncrementMomentumProgress();
 		}
 	}
 
 	public void ExecuteUppercutDamage () {
 		DealDamage(uppercutDamage);
+
+		if (enemyController.GetEnemyState() == EnemyState.Vulnerable) {
+			soundController.PlayTigerHitByUppercutOneShot();
+
+			momentumController.IncrementMomentumProgress();
+		}
+	}
+
+	public void ExecuteSuperDamage () {
+		DealDamage(superPunchDamage);
 
 		if (enemyController.GetEnemyState() == EnemyState.Vulnerable) {
 			soundController.PlayTigerHitByUppercutOneShot();

@@ -15,6 +15,8 @@ public class HealthCircle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		levelManager = GameObject.FindObjectOfType<LevelManager>();
+
 		fillerColor = GetComponent<Image>();
 		soundController = GameObject.FindObjectOfType<PlatformerSoundController>();
 
@@ -26,8 +28,8 @@ public class HealthCircle : MonoBehaviour {
 	public void UpdateHealthCircle () {
 		if (currentHealth > maxHealth) {
 			currentHealth = maxHealth;
-		} else if (currentHealth < 0) {
-			
+		} else if (currentHealth <= 0) {
+			levelManager.ResetLevel();
 		}
 
 		fillerColor.fillAmount = ((float)currentHealth / maxHealth);

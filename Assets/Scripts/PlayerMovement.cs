@@ -125,13 +125,19 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) {
 			// move right
 			horizontal = 1;
+
+			playerAnimator.SetBool("WalkBool", true);
 		} else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) {
 			// move left
 			horizontal = -1;
+
+			playerAnimator.SetBool("WalkBool", true);
 		} 
 
 		if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D)) {
 			horizontal = 0;
+
+			playerAnimator.SetBool("WalkBool", false);
 		}
 
 		if (Input.GetKeyDown(KeyCode.Space)) {
@@ -141,14 +147,20 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void MoveLeft () {
 		horizontal = -1;
+
+		playerAnimator.SetBool("WalkBool", true);
 	}
 
 	public void MoveRight () {
 		horizontal = 1;
+
+		playerAnimator.SetBool("WalkBool", true);
 	}
 
 	public void ResetMovement () {
 		horizontal = 0;
+
+		playerAnimator.SetBool("WalkBool", false);
 	}
 
 	public void Jump () {

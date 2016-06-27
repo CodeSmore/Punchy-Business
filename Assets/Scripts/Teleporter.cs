@@ -4,11 +4,33 @@ using System.Collections;
 public class Teleporter : MonoBehaviour {
 
 	[SerializeField]
-	private GameObject destination = null;
+	private string sceneToLoad = null;
+
+	private LevelManager levelManager;
+	private BellPlaceholder[] bellPlaceholders;
+	private MomentumController momentumController;
+
+	void Start () {
+		levelManager = GameObject.FindObjectOfType<LevelManager>();
+		bellPlaceholders = GameObject.FindObjectsOfType<BellPlaceholder>();
+		momentumController = GameObject.FindObjectOfType<MomentumController>();
+	}
 
 	void OnTriggerEnter2D (Collider2D collider) {
 		if (collider.tag == "Player") {
-			collider.gameObject.transform.position = destination.transform.position;
+			// if all bells are collected, grant momentum
+			int numBellsCollected = 0;
+			foreach (BellPlaceholder placeholder in bellPlaceholders) {
+				if (placeholder.GetCollectedStatus()) {
+					numBellsCollected++;
+				}
+			}
+
+			if (numBellsCollected >= 3) {
+				momentumController.AddMomentum(25);
+			}
+
+			levelManager.LoadSceneButton(sceneToLoad);
 		}
 	}
 }

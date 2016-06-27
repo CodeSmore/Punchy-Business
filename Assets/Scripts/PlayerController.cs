@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
 	private Animator playerAnimator;
 
 	private PlayerState playerState;
+	private MomentumController momentumController;
 
 	private bool isActing = false;
 	private float punchExecuteTime = 0;
@@ -25,17 +26,14 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		playerAnimator = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+		momentumController = GameObject.FindObjectOfType<MomentumController>();
 
 		actionTimerSprite.fillAmount = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (actionTimer >= punchExecuteTime) {
-			ResetActionTimer();
-		}
-
-		if (isActing) {
+		if (isActing && playerState != PlayerState.dodgingLeft && playerState!= PlayerState.dodgingRight) {
 			actionTimerSprite.fillAmount = actionTimer / punchExecuteTime;
 
 			actionTimer += Time.deltaTime;
@@ -125,6 +123,22 @@ public class PlayerController : MonoBehaviour {
 			DisableAllButtons();
 
 			isActing = true;	
+		}
+	} 
+
+	public void SuperPunch () {
+		if (!isActing && !playerAnimator.GetBool("stunned") && momentumController.GetMomentum() >= 100) {
+			playerAnimator.SetTrigger("Super Trigger");
+			SetPlayerState(PlayerState.punching);
+
+			punchExecuteTime = 3f;
+
+			DisableAllButtons();
+
+			// reset super meter
+			momentumController.SubtractMomentum(100);
+
+			isActing = true;
 		}
 	}
 

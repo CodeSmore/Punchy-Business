@@ -12,10 +12,13 @@ public class PlayerHealthBar : MonoBehaviour {
 	private Image healthBarImage;
 	private Text healthBarText;
 
+	private MomentumController momentumController;
+
 	// Use this for initialization
 	void Start () {
 		healthBarImage = GetComponent<Image>();
 		healthBarText = GetComponentInChildren<Text>();
+		momentumController = GameObject.FindObjectOfType<MomentumController>();
 
 		currentHealth = maxHealth;
 	}
@@ -54,5 +57,8 @@ public class PlayerHealthBar : MonoBehaviour {
 
 	public void TakeDamage (int damage) {
 		currentHealth -= damage;
+
+		// reset momemtum progress
+		momentumController.SubtractWhenHit();
 	}
 }

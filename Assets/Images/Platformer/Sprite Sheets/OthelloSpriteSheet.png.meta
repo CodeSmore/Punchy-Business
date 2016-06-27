@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 64c6c6316f3a5ac479452018ba844b3e
+timeCreated: 1466602582
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: OthelloSpriteSheet_0
+    21300002: OthelloSpriteSheet_1
+    21300004: OthelloSpriteSheet_2
+    21300006: OthelloSpriteSheet_3
+    21300008: OthelloSpriteSheet_4
+    21300010: OthelloSpriteSheet_5
+    21300012: OthelloSpriteSheet_6
+    21300014: OthelloSpriteSheet_7
+    21300016: OthelloSpriteSheet_8
+    21300018: OthelloSpriteSheet_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: OthelloSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1418
+        width: 102
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.720001, y: 148.02673}
+        - {x: -43.72, y: 127.02673}
+        - {x: -43.72, y: -124.97327}
+        - {x: -41.72, y: -147.97327}
+        - {x: 27.279999, y: -147.97327}
+        - {x: 44.28, y: -24.973267}
+        - {x: 44.28, y: 119.02673}
+        - {x: 18.279999, y: 148.02673}
+      - - {x: -10.720001, y: 110.02673}
+        - {x: -13.720001, y: 107.02673}
+        - {x: -13.720001, y: 95.02673}
+        - {x: 11.279999, y: 95.02673}
+        - {x: 11.279999, y: 105.02673}
+        - {x: 5.279999, y: 110.02673}
+    - name: OthelloSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1426
+        width: 123
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.880005, y: 143.3534}
+        - {x: -52.880005, y: 107.35339}
+        - {x: -52.880005, y: -141.6466}
+        - {x: 53.119995, y: -141.6466}
+        - {x: 53.119995, y: 139.3534}
+        - {x: 39.119995, y: 143.3534}
+      - - {x: -26.880005, y: -78.64661}
+        - {x: -23.880005, y: -83.64661}
+        - {x: -20.880005, y: -82.64661}
+        - {x: -20.880005, y: -78.64661}
+        - {x: -22.880005, y: -76.64661}
+        - {x: -24.880005, y: -76.64661}
+      - - {x: 6.119995, y: 108.35339}
+        - {x: -5.880005, y: 108.35339}
+        - {x: -12.880005, y: 105.35339}
+        - {x: -12.880005, y: 100.35339}
+        - {x: -10.880005, y: 95.35339}
+        - {x: 8.119995, y: 95.35339}
+        - {x: 13.119995, y: 99.35339}
+        - {x: 13.119995, y: 103.35339}
+    - name: OthelloSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 1423
+        width: 130
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.4666748, y: -51.706665}
+        - {x: 56.466675, y: -31.706665}
+        - {x: 56.466675, y: 113.293335}
+        - {x: 41.466675, y: 149.29333}
+        - {x: -39.533325, y: 149.29333}
+        - {x: -55.533325, y: 131.29333}
+        - {x: -55.533325, y: -148.70667}
+        - {x: 9.466675, y: -148.70667}
+        - {x: 21.466675, y: -78.706665}
+        - {x: 8.466675, y: -56.706665}
+      - - {x: -2.5333252, y: 111.293335}
+        - {x: -15.533325, y: 105.293335}
+        - {x: -15.533325, y: 96.293335}
+        - {x: -10.533325, y: 94.293335}
+        - {x: -3.5333252, y: 94.293335}
+        - {x: 4.466675, y: 95.293335}
+        - {x: 8.466675, y: 96.293335}
+        - {x: 8.466675, y: 104.293335}
+        - {x: 7.466675, y: 111.293335}
+    - name: OthelloSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1424
+        width: 201
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.3067, y: 148.64673}
+        - {x: -57.6933, y: 148.64673}
+        - {x: -85.6933, y: 33.64673}
+        - {x: -85.6933, y: -148.35327}
+        - {x: -2.6932983, y: -148.35327}
+        - {x: 16.306702, y: -142.35327}
+        - {x: 50.3067, y: -115.35327}
+        - {x: 86.3067, y: -64.35327}
+        - {x: 86.3067, y: 89.64673}
+    - name: OthelloSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1428
+        width: 204
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.56671, y: 86.56006}
+        - {x: 13.566711, y: 145.56006}
+        - {x: -33.43329, y: 145.56006}
+        - {x: -76.43329, y: 53.56006}
+        - {x: -59.43329, y: -14.439941}
+        - {x: -41.43329, y: -21.439941}
+        - {x: -31.433289, y: -12.439941}
+        - {x: -31.433289, y: -4.4399414}
+        - {x: -32.43329, y: 7.5600586}
+        - {x: -30.433289, y: 27.560059}
+        - {x: -30.433289, y: -21.439941}
+        - {x: -39.43329, y: -22.439941}
+        - {x: -87.43329, y: -111.43994}
+        - {x: -87.43329, y: -144.43994}
+        - {x: 60.56671, y: -144.43994}
+        - {x: 87.56671, y: 15.560059}
+        - {x: 87.56671, y: 39.56006}
+        - {x: 82.56671, y: 47.56006}
+    - name: OthelloSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1425
+        width: 216
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 93.746704, y: -139.5}
+        - {x: 93.746704, y: 119.5}
+        - {x: 62.746704, y: 139.5}
+        - {x: -38.253296, y: 139.5}
+        - {x: -45.253296, y: 128.5}
+        - {x: -78.253296, y: -41.5}
+        - {x: -48.253296, y: -29.5}
+        - {x: -39.253296, y: -19.5}
+        - {x: -92.253296, y: -110.5}
+        - {x: -92.253296, y: -123.5}
+        - {x: -80.253296, y: -139.5}
+        - {x: -57.253296, y: -139.5}
+        - {x: -54.253296, y: -138.5}
+        - {x: -56.253296, y: -131.5}
+        - {x: -62.253296, y: -121.5}
+        - {x: -12.253296, y: -139.5}
+    - name: OthelloSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 1434
+        width: 228
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54.079956, y: 143.68005}
+        - {x: -66.079956, y: 116.68005}
+        - {x: -97.079956, y: -24.319946}
+        - {x: -97.079956, y: -142.31995}
+        - {x: 92.920044, y: -142.31995}
+        - {x: 98.920044, y: -134.31995}
+        - {x: 98.920044, y: 57.680054}
+        - {x: -9.079956, y: 143.68005}
+    - name: OthelloSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 1437
+        width: 164
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -70.28662, y: -118.76001}
+        - {x: -53.28662, y: -134.76001}
+        - {x: 70.71338, y: -134.76001}
+        - {x: 70.71338, y: 98.23999}
+        - {x: 35.71338, y: 121.23999}
+        - {x: 7.713379, y: 135.23999}
+        - {x: -62.28662, y: 135.23999}
+        - {x: -70.28662, y: 70.23999}
+    - name: OthelloSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 1445
+        width: 144
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -40.013306, y: 135.06665}
+        - {x: -61.013306, y: 58.06665}
+        - {x: -61.013306, y: -134.93335}
+        - {x: 31.986694, y: -134.93335}
+        - {x: 62.986694, y: -48.93335}
+        - {x: 62.986694, y: 78.06665}
+        - {x: 25.986694, y: 135.06665}
+      - - {x: 19.986694, y: -50.93335}
+        - {x: 17.986694, y: -52.93335}
+        - {x: 17.986694, y: -54.93335}
+        - {x: 19.986694, y: -56.93335}
+        - {x: 23.986694, y: -56.93335}
+        - {x: 25.986694, y: -54.93335}
+        - {x: 25.986694, y: -53.93335}
+        - {x: 22.986694, y: -50.93335}
+    - name: OthelloSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 1449
+        width: 88
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.539917, y: 129.47998}
+        - {x: -37.539917, y: 39.47998}
+        - {x: -37.539917, y: -126.52002}
+        - {x: -35.539917, y: -128.52002}
+        - {x: 32.460083, y: -128.52002}
+        - {x: 39.460083, y: -112.52002}
+        - {x: 39.460083, y: 125.47998}
+        - {x: 38.460083, y: 129.47998}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

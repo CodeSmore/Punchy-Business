@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: aecb3afdd2222dc42b491a5c8f8987bd
+timeCreated: 1466516884
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WalkingPath_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WalkingPath_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1539
+        width: 2400
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -472, y: -48.21997}
+        - {x: -471, y: -47.21997}
+        - {x: -204, y: -47.21997}
+        - {x: -203, y: -46.21997}
+        - {x: -20, y: -46.21997}
+        - {x: -13, y: -47.21997}
+        - {x: -7, y: -47.21997}
+        - {x: 5, y: -46.21997}
+        - {x: 13, y: -46.21997}
+        - {x: 20, y: -45.21997}
+        - {x: 21, y: -46.21997}
+        - {x: 25, y: -46.21997}
+        - {x: 26, y: -45.21997}
+        - {x: 213, y: -45.21997}
+        - {x: 215, y: -46.21997}
+        - {x: 221, y: -46.21997}
+        - {x: 234, y: -45.21997}
+        - {x: 261, y: -45.21997}
+        - {x: 262, y: -44.21997}
+        - {x: 448, y: -44.21997}
+        - {x: 456, y: -43.21997}
+        - {x: 457, y: -44.21997}
+        - {x: 471, y: -44.21997}
+        - {x: 472, y: -43.21997}
+        - {x: 482, y: -43.21997}
+        - {x: 484, y: -44.21997}
+        - {x: 485, y: -43.21997}
+        - {x: 681, y: -43.21997}
+        - {x: 682, y: -42.21997}
+        - {x: 695, y: -42.21997}
+        - {x: 697, y: -43.21997}
+        - {x: 698, y: -42.21997}
+        - {x: 1022, y: -42.21997}
+        - {x: 1024, y: -41.21997}
+        - {x: 1024, y: 46.78003}
+        - {x: 91, y: 46.78003}
+        - {x: 90, y: 48.78003}
+        - {x: 86, y: 48.78003}
+        - {x: 85, y: 46.78003}
+        - {x: -1024, y: 46.78003}
+        - {x: -1024, y: -48.21997}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

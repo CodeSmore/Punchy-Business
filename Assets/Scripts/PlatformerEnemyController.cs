@@ -37,6 +37,12 @@ public class PlatformerEnemyController : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerExit2D (Collider2D collider) {
+		if (collider.tag == "MainCamera") {
+			isActive = false;
+		}
+	}
+
 	public bool GetIsActive () {
 		return isActive;
 	}

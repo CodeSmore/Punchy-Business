@@ -36,7 +36,7 @@ public class Boomerang : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		// used to ensure boomerang is not destroyed until item on boomerang is collected
 		if (destroyLater == true && transform.childCount == 0) {
 			Destroy(gameObject);

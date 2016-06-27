@@ -1,0 +1,11 @@
+Fight:
+
+- Add timing and round system
+- Make player lose if made to end of fight
+- One down makes the player win
+
+x Add indicators to show momentum prgress (three indicators)
+
+General: 
+
+- put cat grinder on Play store

@@ -39,7 +39,7 @@ public class EnemyController : MonoBehaviour {
 	// TODO add if statements so sound doesn't play when player dodges or blocks
 
 	public void Jab () {
-		if (playerController.GetPlayerState() != PlayerState.dodgingLeft && playerController.GetPlayerState() != PlayerState.dodgingLeft) {
+		if (playerController.GetPlayerState() != PlayerState.dodgingLeft && playerController.GetPlayerState() != PlayerState.dodgingRight) {
 			playerHealthBar.TakeDamage(1);
 			soundController.PlayJabOneShot();
 
